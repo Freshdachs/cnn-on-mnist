@@ -77,10 +77,23 @@
 
 \section{Implementing a simple CNN for the MNIST challenge}
 \subsection{Basic Architecture}
-In this section, we will start with a prototypical CNN architecture, consisting of 2 convolutional layers, a convolutional layer and an output layer. The output of every layer (except from the output layer) is activated by a rectified linear unit. Furthermore, the output of our convolutional layers is pooled with windowsize 2 and stepsize 2. 
+In this section, we will start with a prototypical CNN architecture, consisting of 2 convolutional layers, a fully connected layer and an output layer. The output of every layer (except from the output layer) is activated by a rectified linear unit. Furthermore, the output of each convolutional layer is max-pooled with windowsize 2 and stepsize 2. 
+
+\subsubsection*{Convolutional Layers}
+Our first Convolutional Layer consists of 32 5x5 Kernels. Our second convolutional layer translates these 32 channels into 64 channels with 5x5 kernels. Each output is passed into a Relu and then maxpooled. As a stepsize for convolution, we chose single steps.
+
+\subsubsection*{Fully Connected Layer and Output Layer}
+Finally, we apply a fully connected layer that connects the maxpooled output from our convolutional layers with our output layer. The fully connected layer has a size of 7*7*64x1024. The output layer translates these 1024 inputs to the 10 classes (numbers). It has a shape of 1024x10.
+
 
 
 \subsection{Training Process}
+
+For Training our CNNs, we developed our own framework that allows rapid creation of different CNN architectures. Another central goal for our framework was logging and discoverability, so that we can easily compare and analyze the many different architectures that we want to test. Therefore we implemented tensorboard support, so that for any high level specification of a CNN, we can see the correct Graph in Tensorboard and have properly labeled, exhaustive statisticis, such as distributions, scalar summaries, and image summaries of misclassified inputs as well as convolved inputs.
+
+For each CNN, we construct a proper prediction graph, with proper logging capabilities. This graph is then passed into a loss node, which, in turn, is passed into an optimization node. For optimization we used the Adam Optimizer.
+
+The Adam Optimizer has empirically shown to be a rather good and stable optimizer. Further more, it allows us to ignore step size as a parameter.
 \subsection{Evaluating Test Performance}
 
 
