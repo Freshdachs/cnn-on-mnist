@@ -113,6 +113,18 @@ For each CNN we construct a proper prediction graph with proper logging capabili
 
 The Adam Optimizer has empirically shown to be a rather good and stable optimizer. 
 
+We also monitor the convolutions themselves to analyze to which features our convolutional layers react. A visualization of the ouput from our convolutional layers can be found in \ref{convout}.
+
+\begin{figure}
+\centering
+\begin{tabular}{cc}
+  \includegraphics[width=0.22\textwidth]{imgs/conv1.png}    \includegraphics[width=0.22\textwidth]{imgs/conv2.png}    \includegraphics[width=0.22\textwidth]{imgs/conv3.png}  \includegraphics[width=0.22\textwidth]{imgs/conv4.png}   \\
+   \includegraphics[width=0.22\textwidth]{imgs/conv5.png}    \includegraphics[width=0.22\textwidth]{imgs/conv6.png} 
+\includegraphics[width=0.22\textwidth]{imgs/conv7.png}    \includegraphics[width=0.22\textwidth]{imgs/conv8.png}    
+\end{tabular}
+\caption{first 8 convolutions of a handwritten seven}\label{convout}
+\end{figure}
+
 \subsection{Evaluating Test Performance}
 \subsubsection{Quantitative Performance Analysis}
 
