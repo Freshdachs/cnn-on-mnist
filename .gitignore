@@ -1,3 +1,6 @@
 /MNIST_data/*
 /MNIST_data
 /.ipynb_checkpoints
+/ops_logs/*
+/ops_logs
+/__pycache__
