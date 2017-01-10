@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.3)  9 JAN 2017 07:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.3)  10 JAN 2017 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**CNN_on_MNIST.tex
-(./CNN_on_MNIST.tex
+**RNN_on_examples.tex
+(./RNN_on_examples.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -594,8 +594,8 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip56
 \subfig@bottom=\skip57
 )
-(./CNN_on_MNIST.aux)
-\openout1 = `CNN_on_MNIST.aux'.
+(./RNN_on_examples.aux)
+\openout1 = `RNN_on_examples.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
@@ -612,7 +612,8 @@ LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 68.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -695,9 +696,9 @@ LaTeX Info: Redefining \ref on input line 68.
 LaTeX Info: Redefining \pageref on input line 68.
 LaTeX Info: Redefining \nameref on input line 68.
 
-(./CNN_on_MNIST.out) (./CNN_on_MNIST.out)
+(./RNN_on_examples.out) (./RNN_on_examples.out)
 \@outlinefile=\write3
-\openout3 = `CNN_on_MNIST.out'.
+\openout3 = `RNN_on_examples.out'.
 
 LaTeX Info: Redefining \microtypecontext on input line 68.
 Package microtype Info: Generating PDF output.
@@ -778,64 +779,66 @@ Package microtype Info: Loading generic settings for font family
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 73.
 
-<images/xsinx.png, id=48, 386.6445pt x 257.2812pt>
+<images/xsinx.png, id=52, 386.6445pt x 257.2812pt>
 File: images/xsinx.png Graphic file (type png)
  <use images/xsinx.png>
 Package pdftex.def Info: images/xsinx.png used on input line 86.
 (pdftex.def)             Requested size: 178.86702pt x 119.0221pt.
 
-<images/volcano.png, id=50, 385.9218pt x 257.2812pt>
-File: images/volcano.png Graphic file (type png)
- <use images/volcano.png>
-Package pdftex.def Info: images/volcano.png used on input line 87.
+<images/sunspots.png, id=54, 385.9218pt x 257.2812pt>
+File: images/sunspots.png Graphic file (type png)
+
+<use images/sunspots.png>
+Package pdftex.def Info: images/sunspots.png used on input line 87.
 (pdftex.def)             Requested size: 178.86702pt x 119.24586pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/xsinx.png> <./ima
-ges/volcano.png>] [2] <images/train.png, id=71, 386.6445pt x 267.399pt>
-File: images/train.png Graphic file (type png)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./images/xsinx.png> <.
+/images/sunspots.png>] <images/test1.png, id=75, 389.5353pt x 267.399pt>
+File: images/test1.png Graphic file (type png)
 
-<use images/train.png>
-Package pdftex.def Info: images/train.png used on input line 111.
-(pdftex.def)             Requested size: 178.86702pt x 123.70274pt.
- <images/test.png, id=72, 389.5353pt x 267.399pt>
-File: images/test.png Graphic file (type png)
-
-<use images/test.png>
-Package pdftex.def Info: images/test.png used on input line 112.
+<use images/test1.png>
+Package pdftex.def Info: images/test1.png used on input line 113.
 (pdftex.def)             Requested size: 178.86702pt x 122.7847pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
- [3 <./images/train.png> <./images/test.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+ <images/test2.png, id=76, 388.0899pt x 267.399pt>
+File: images/test2.png Graphic file (type png)
 
-(./CNN_on_MNIST.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
-Package rerunfilecheck Info: File `CNN_on_MNIST.out' has not changed.
-(rerunfilecheck)             Checksum: D6564AB54BF5FC44EF26B5D00296AA8F;674.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+<use images/test2.png>
+Package pdftex.def Info: images/test2.png used on input line 114.
+(pdftex.def)             Requested size: 178.86702pt x 123.24168pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+ [3 <./images/test1.png> <./images/test2.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+
+(./RNN_on_examples.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package rerunfilecheck Info: File `RNN_on_examples.out' has not changed.
+(rerunfilecheck)             Checksum: 1F02794DD8A63ED75BAEA35BF9630081;745.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 8313 strings out of 494910
- 124548 string characters out of 6179836
- 238551 words of memory out of 5000000
- 11423 multiletter control sequences out of 15000+600000
- 24426 words of font info for 65 fonts, out of 8000000 for 9000
+ 8338 strings out of 494910
+ 124821 string characters out of 6179836
+ 238680 words of memory out of 5000000
+ 11425 multiletter control sequences out of 15000+600000
+ 25336 words of font info for 79 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 31i,8n,35p,713b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,8n,35p,755b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/bastian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/s
 hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
-fb>
-Output written on CNN_on_MNIST.pdf (3 pages, 190996 bytes).
+nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb>
+Output written on RNN_on_examples.pdf (3 pages, 186732 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 12397 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
+ 12405 words of extra memory for PDF output out of 14400 (max. 10000000)
 

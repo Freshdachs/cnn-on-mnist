@@ -6,6 +6,7 @@
 \BOOKMARK [2][-]{subsection.2.1}{Architecture}{section.2}% 6
 \BOOKMARK [2][-]{subsection.2.2}{Effect of Iteration Count}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{Effect of Timesteps}{section.2}% 8
-\BOOKMARK [1][-]{section.3}{Performance}{}% 9
-\BOOKMARK [2][-]{subsection.3.1}{Dataset 1}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.2}{Dataset 2}{section.3}% 11
+\BOOKMARK [1][-]{section.3}{Training and Performance}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Training}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Dataset 1}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Dataset 2}{section.3}% 12
